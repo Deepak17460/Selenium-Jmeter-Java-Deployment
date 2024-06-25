@@ -1,0 +1,8 @@
+pool:
+  vmImage: ubuntu-latest
+
+steps:
+- task: Maven@3
+  inputs:
+    mavenPomFile: 'webapp/pom.xml'
+    goals: 'clean verify'
